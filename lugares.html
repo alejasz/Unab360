@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lugares del campus · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="lugares" data-protected>
+<main class="container">
+  <div class="page-head">
+    <div><h1>Lugares del campus</h1><p>¿Dónde puedo obtener HL? Explora los espacios de la UNAB, conoce sus horarios y regístrate para tu próxima hora libre.</p></div>
+  </div>
+  <div class="chips" style="margin-bottom:16px">
+    <button class="chip on" data-tab="disp">Lugares disponibles</button>
+    <button class="chip" data-tab="mios">Mis lugares registrados</button>
+  </div>
+  <div class="toolbar">
+    <div class="field"><label for="fQ">Buscar por nombre o actividad</label><input id="fQ" type="search" placeholder="Ej: gimnasio, estudiar…"></div>
+    <div class="field"><label for="fCampus">Campus</label><select id="fCampus"></select></div>
+    <div class="field"><label for="fTipo">Tipo</label><select id="fTipo"></select></div>
+  </div>
+  <section class="grid g3" id="placeGrid"></section>
+  <section class="card hidden" id="regBox">
+    <h2 style="margin-bottom:10px">Mis registros</h2>
+    <div class="table-wrap"><table><thead><tr><th>Lugar</th><th>Cuándo</th><th>Duración</th><th>Estado</th><th>Acciones</th></tr></thead><tbody id="regBody"></tbody></table></div>
+    <p class="small muted" style="margin-top:10px">Al marcar “Asistí”, las horas se suman automáticamente a tu registro de horas libres.</p>
+  </section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

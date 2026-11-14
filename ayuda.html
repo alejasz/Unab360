@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ayuda · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="ayuda" data-protected>
+<main class="container">
+  <div class="page-head"><div><h1>Ayuda y preguntas frecuentes</h1><p>Resuelve tus dudas sobre el portal o envíanos una sugerencia.</p></div></div>
+  <section class="grid g2">
+    <div>
+      <details open><summary>¿Cómo registro mis horas libres?</summary><p>Entra a <a href="horas-libres.html">Horas libres</a> y pulsa “Registrar horas”. Puedes editar o eliminar cada registro cuando quieras.</p></details>
+      <details><summary>¿Cómo me registro en un lugar del campus?</summary><p>En <a href="lugares.html">Lugares</a> elige el espacio y pulsa “Registrarme”. Luego, en “Mis lugares registrados”, marca “Asistí” para sumar las horas.</p></details>
+      <details><summary>¿Cómo cambio mi horario de clases?</summary><p>En el <a href="calendario.html">Calendario</a> crea una actividad de tipo “Clase” y activa “Repetir cada semana”. Para modificarla, haz clic en el día y pulsa “Editar”.</p></details>
+      <details><summary>¿Se guardan mis datos?</summary><p>Sí, en este navegador y por usuario. Si borras los datos del navegador se perderán.</p></details>
+      <details><summary>¿Cómo cambio entre modo claro y oscuro?</summary><p>Con el botón de luna o sol del encabezado. Tu preferencia se recuerda al volver.</p></details>
+      <details><summary>¿Dónde veo mis notas oficiales?</summary><p>En <a href="https://miportalu.unab.edu.co/" target="_blank" rel="noopener">Mi Portal U</a>. El simulador de este sitio es solo una estimación.</p></details>
+    </div>
+    <div class="card">
+      <h2 style="margin-bottom:12px">Contáctanos</h2>
+      <form id="contactForm" novalidate>
+        <div class="field"><label for="tipo">Tipo</label><select id="tipo" name="tipo"><option>Sugerencia</option><option>Reportar un error</option><option>Otro</option></select></div>
+        <div class="field"><label for="asunto">Asunto</label><input id="asunto" name="asunto" maxlength="80"><div class="err" aria-live="polite"></div></div>
+        <div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" maxlength="600"></textarea><div class="err" aria-live="polite"></div></div>
+        <button class="btn yellow">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

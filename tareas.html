@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tareas · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tareas" data-protected>
+<main class="container" style="max-width:820px">
+  <div class="page-head">
+    <div><h1>Tareas y recordatorios</h1><p id="tCount"></p></div>
+    <button class="btn yellow" id="addT">＋ Nueva tarea</button>
+  </div>
+  <div class="chips" style="margin-bottom:14px"><button class="chip on" data-f="todas">Todas</button><button class="chip" data-f="pend">Pendientes</button><button class="chip" data-f="hechas">Completadas</button></div>
+  <section class="card" id="tList"></section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

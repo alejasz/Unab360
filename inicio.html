@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inicio · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="inicio" data-protected>
+<main class="container">
+  <section class="hero" style="background-image:url(img/campus-hero.jpg)">
+    <div class="in">
+      <span class="badge y">Portal del estudiante</span>
+      <h1 id="saludo" style="margin-top:10px">¡Hola!</h1>
+      <p>Revisa tus horas libres, lugares del campus, calendario y herramientas académicas.</p>
+      <a class="btn yellow" href="horas-libres.html">Ver mis horas libres</a> <a class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" href="lugares.html">Explorar lugares</a>
+    </div>
+  </section>
+
+  <section class="grid g4" style="margin-top:22px">
+    <div class="card"><div class="stat"><div><b id="sHL">0</b><span class="muted small">Horas libres cumplidas</span></div></div></div>
+    <div class="card"><div class="stat"><div><b id="sFalta">0</b><span class="muted small">Horas que me faltan (meta <span id="sMeta"></span>)</span></div></div></div>
+    <div class="card"><div class="stat"><div><b id="sTareas">0</b><span class="muted small">Tareas pendientes</span></div></div></div>
+    <div class="card" style="display:flex;align-items:center;gap:14px"><div class="ring" id="ring"></div><span class="small muted">Progreso de tus horas libres</span></div>
+  </section>
+
+  <section class="card" style="margin-top:22px">
+    <h2 style="margin-bottom:4px">Top 10 de estudiantes con más horas libres</h2>
+    <p class="small muted" style="margin-bottom:10px">Datos de muestra. Si no estás en el top 10, aparece tu posición al final.</p>
+    <div class="table-wrap"><table class="top"><thead><tr><th>#</th><th>Estudiante</th><th>Horas libres</th></tr></thead><tbody id="top10"></tbody></table></div>
+  </section>
+
+  <h2 style="margin:30px 0 14px">Accesos directos UNAB</h2>
+  <section class="grid g4" id="quick"></section>
+
+  <h2 style="margin:30px 0 14px">Explora el portal</h2>
+  <section class="grid g4">
+    <a class="tile" href="horas-libres.html"><b>Horas libres</b><span>Registra y edita tus HL</span></a>
+    <a class="tile" href="lugares.html"><b>Lugares del campus</b><span>Banú, gimnasio, cafeterías…</span></a>
+    <a class="tile" href="calendario.html"><b>Calendario</b><span>Horario y pendientes</span></a>
+    <a class="tile" href="notas.html"><b>Notas</b><span>Simulador y promedio</span></a>
+    <a class="tile" href="asistencia.html"><b>Asistencia</b><span>Controla tus faltas</span></a>
+    <a class="tile" href="tareas.html"><b>Tareas</b><span>Recordatorios personales</span></a>
+    <a class="tile" href="perfil.html"><b>Mi perfil</b><span>Tus datos y avance</span></a>
+    <a class="tile" href="ayuda.html"><b>Ayuda</b><span>Preguntas frecuentes</span></a>
+  </section>
+
+  <section class="grid g2" style="margin-top:30px">
+    <div class="card"><h2 style="margin-bottom:8px">Próximas actividades</h2><div id="prox"></div><a class="btn ghost sm" href="calendario.html" style="margin-top:12px">Abrir calendario</a></div>
+    <div class="card"><h2 style="margin-bottom:8px">Mis tareas</h2><div id="tareasRes"></div><a class="btn ghost sm" href="tareas.html" style="margin-top:12px">Ver todas</a></div>
+  </section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

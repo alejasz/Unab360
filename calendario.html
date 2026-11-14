@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calendario · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="calendario" data-protected>
+<main class="container">
+  <div class="page-head">
+    <div><h1>Calendario académico</h1><p>Haz clic en un día para ver, editar o agregar actividades. Las clases pueden repetirse cada semana para armar tu horario.</p></div>
+    <button class="btn yellow" id="addEv">＋ Nueva actividad</button>
+  </div>
+  <section class="grid split-cal">
+    <div class="card">
+      <div class="cal-head"><h2 id="calTitle"></h2>
+        <div style="display:flex;gap:6px"><button class="btn ghost sm" id="prevM" aria-label="Mes anterior">Anterior</button><button class="btn ghost sm" id="todayM">Hoy</button><button class="btn ghost sm" id="nextM" aria-label="Mes siguiente">Siguiente</button></div></div>
+      <div class="cal" id="calGrid"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside class="card"><h2 style="margin-bottom:8px">Próximas actividades</h2><div id="upList"></div></aside>
+  </section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

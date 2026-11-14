@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notas · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="notas" data-protected>
+<main class="container">
+  <div class="page-head"><div><h1>Simulador de notas</h1><p>Calcula qué nota necesitas en lo que te falta para aprobar una materia y obtén tu promedio ponderado.</p></div></div>
+  <section class="grid g2">
+    <div class="card">
+      <h2 style="margin-bottom:12px">¿Cuánto necesito para aprobar?</h2>
+      <div class="field" style="max-width:220px"><label for="minNota">Nota mínima aprobatoria</label><input id="minNota" type="number" min="0" max="5" step="0.1" value="3.0"></div>
+      <div id="cortes"></div>
+      <button class="btn ghost sm" id="addCorte" type="button">＋ Agregar corte</button>
+      <div class="result" id="simRes" aria-live="polite"></div>
+    </div>
+    <div class="card">
+      <h2 style="margin-bottom:12px">Promedio ponderado</h2>
+      <div id="mats"></div>
+      <button class="btn ghost sm" id="addMat" type="button">＋ Agregar materia</button>
+      <div class="result" id="promRes" aria-live="polite"></div>
+    </div>
+  </section>
+  <p class="small muted" style="margin-top:16px">Los valores son una estimación: tu nota oficial siempre está en <a href="https://miportalu.unab.edu.co/" target="_blank" rel="noopener">Mi Portal U</a>.</p>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

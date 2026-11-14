@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mi perfil · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="perfil" data-protected>
+<main class="container">
+  <div class="page-head"><div><h1>Mi perfil</h1></div><button class="btn yellow" id="editP">Editar datos</button></div>
+  <section class="profile">
+    <div class="card" style="text-align:center">
+      <div id="pFoto"></div>
+      <h2 id="pNombre" style="font-size:1.15rem"></h2>
+      <p class="muted small" id="pCorreo"></p>
+      <span class="badge y" style="margin-top:10px">Estudiante UNAB</span>
+    </div>
+    <div class="grid">
+      <div class="card"><h2 style="margin-bottom:14px">Datos del estudiante</h2><dl class="kv" id="pDatos"></dl></div>
+      <div class="card"><h2 style="margin-bottom:14px">Mis horas libres</h2>
+        <div class="grid g3" style="margin-bottom:14px">
+          <div><span class="muted small">Tengo</span><div style="font-size:1.8rem;font-weight:700" id="pHL">0</div></div>
+          <div><span class="muted small">Me faltan</span><div style="font-size:1.8rem;font-weight:700;color:var(--o-500)" id="pFalta">0</div></div>
+          <div><span class="muted small">Lugares registrados</span><div style="font-size:1.8rem;font-weight:700" id="pReg">0</div></div>
+        </div>
+        <div class="bar-track"><div class="bar-fill" id="pBar" style="width:0"></div></div>
+        <a class="btn ghost sm" href="horas-libres.html" style="margin-top:14px">Gestionar mis HL</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

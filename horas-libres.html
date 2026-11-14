@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Horas libres · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="horas" data-protected>
+<main class="container">
+  <div class="page-head">
+    <div><h1>Mis horas libres</h1><p>Registra, edita o elimina las horas libres (HL) que has realizado y revisa cuántas te faltan.</p></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" id="editMeta">Cambiar meta</button><button class="btn yellow" id="addHL">＋ Registrar horas</button></div>
+  </div>
+
+  <section class="grid g3">
+    <div class="card"><span class="muted small">Cumplidas</span><div style="font-size:2.2rem;font-weight:700" id="hTot">0</div><span class="small muted">horas libres</span></div>
+    <div class="card"><span class="muted small">Me faltan</span><div style="font-size:2.2rem;font-weight:700;color:var(--o-500)" id="hFalta">0</div><span class="small muted">de <span id="hMeta"></span> horas</span></div>
+    <div class="card"><span class="muted small">Progreso</span><div style="font-size:2.2rem;font-weight:700" id="hPct">0%</div><div class="bar-track" style="margin-top:8px"><div class="bar-fill" id="hBar" style="width:0"></div></div><p class="small muted" id="hMsg" style="margin-top:8px"></p></div>
+  </section>
+
+  <section class="grid split-21" style="margin-top:22px">
+    <div class="card">
+      <div class="toolbar" style="margin-bottom:8px"><h2 style="flex:2">Registro de horas</h2><div class="field"><label for="fLugar" class="small muted">Filtrar por lugar</label><select id="fLugar"></select></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Lugar</th><th>Horas</th><th>Nota</th><th>Acciones</th></tr></thead><tbody id="hlBody"></tbody></table></div>
+    </div>
+    <div class="card"><h2 style="margin-bottom:8px">Horas por lugar</h2><div id="hPlaces"></div></div>
+  </section>
+
+  <section class="card" style="margin-top:22px">
+    <h2>¿Qué hago en mi hora libre?</h2>
+    <p class="muted" style="margin-bottom:14px">Dinos cuánto tiempo tienes y te recomendamos dónde ir.</p>
+    <div class="toolbar">
+      <div class="field"><label for="sMin">Tiempo disponible</label><select id="sMin"><option value="20">20 minutos</option><option value="30">30 minutos</option><option value="45">45 minutos</option><option value="60" selected>1 hora</option><option value="90">1 hora 30</option><option value="120">2 horas</option><option value="180">3 horas</option></select></div>
+      <div class="field"><label for="sTipo">Tipo de actividad</label><select id="sTipo"></select></div>
+    </div>
+    <div class="grid g2" id="sugList"></div>
+  </section>
+</main>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Iniciar sesión · UNAB 360</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login" data-bare data-guest>
+<div class="auth">
+  <section class="art">
+    <img src="img/logo.png" alt="Universidad UNAB">
+    <div>
+      <h1>Tus horas libres,<br><span class="accent">en un solo lugar.</span></h1>
+      <p>Consulta cuántas HL llevas, encuentra dónde cumplirlas en el campus y organiza tu semestre.</p>
+      <ul><li>Control de horas libres</li><li>Lugares del campus</li><li>Calendario y tareas</li><li>Simulador de notas</li></ul>
+    </div>
+    <small>UNAB 360 · Bucaramanga, Colombia</small>
+  </section>
+  <section class="form">
+    <div class="box">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema" style="float:right;background:var(--p-100);color:var(--text)"></button>
+      <h2>Iniciar sesión</h2>
+      <p class="muted" style="margin-bottom:20px">Ingresa con tu usuario o correo institucional.</p>
+      <div id="loginAlert" class="alert hidden" role="alert"></div>
+      <form id="loginForm" novalidate>
+        <div class="field"><label for="usuario">Usuario o correo</label><input id="usuario" name="usuario" autocomplete="username" value="thore"><div class="err" aria-live="polite"></div></div>
+        <div class="field"><label for="clave">Clave</label><div class="pw"><input id="clave" name="clave" type="password" autocomplete="current-password" value="Unab2026"><button type="button" aria-label="Mostrar clave">Ver</button></div><div class="err" aria-live="polite"></div></div>
+        <button class="btn yellow" style="width:100%;justify-content:center;padding:13px">Ingresar</button>
+      </form>
+    </div>
+  </section>
+</div>
+<script src="js/firebase-config.js"></script><script src="js/core.js"></script><script src="js/pages.js"></script>
+</body>
+</html>

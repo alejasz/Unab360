@@ -49,29 +49,6 @@ unab360/
 └── img/                  Logo, fotos del campus y del equipo
 ```
 
-## Cómo usarlo
-
-1. Descarga o clona el repositorio.
-2. Abre `index.html` en el navegador (Chrome, Edge o Firefox).
-3. Inicia sesión con el usuario precargado. Los datos de acceso aparecen escritos en el formulario.
-
-No requiere instalar nada.
-
-## Publicar en GitHub Pages
-
-1. En el repositorio entra a **Settings** y luego a **Pages**.
-2. En **Source** elige **Deploy from a branch**.
-3. Selecciona la rama **main** y la carpeta **/ (root)**, y guarda.
-4. Después de uno o dos minutos la página queda disponible en `https://TU-USUARIO.github.io/NOMBRE-DEL-REPOSITORIO/`.
-
-## Notas importantes
-
-- No hay servidor ni base de datos: los datos se guardan en el navegador de cada dispositivo. Si se borran los datos del navegador, se pierden.
-- Los usuarios están precargados en el código y la página no tiene registro de cuentas. Las claves no están cifradas, por lo que el sistema es solo para fines académicos.
-- El Top 10 de estudiantes, los horarios de las clases y los horarios de los lugares son datos de muestra.
-- Las fotos del campus provienen del sitio oficial de la UNAB (unab.edu.co).
-- Este es un proyecto estudiantil y no es un sitio oficial de la Universidad.
-
 ## Creadores
 
 - Alejandra Suárez Durán
